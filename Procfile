@@ -1,1 +1,1 @@
-
+web: gunicorn brand.wsgi
