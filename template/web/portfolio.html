@@ -1,0 +1,977 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Awaiken">
+	<!-- Page Title -->
+	<title>Brandbik</title>
+	<!-- Favicon Icon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static "favicon/apple-touch-icon.png" %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon/favicon-32x32.png" %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon/favicon-16x16.png" %}" >
+    <link rel="manifest" href="{% static "favicon/site.webmanifest" %}">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Css -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="{% static "css/slicknav.min.css" %}" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href"{% static "css/swiper-bundle.min.css" %}">
+    <!-- Font Awesome Icon Css-->
+    <link href="{% static "css/all.css" %}" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="{% static "css/animate.css" %}" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+    <!-- Main Custom Css -->
+    <link href="{% static "css/custom.css" %}" rel="stylesheet" media="screen">
+</head>
+
+<body class="tt-magic-cursor">
+	<style>
+		/* Normal state for the buttons/links */
+		.our-projects-nav ul li a {
+			background-color: transparent;
+			color: #000;
+			/* Default text color */
+			text-decoration: none;
+			padding: 10px 20px;
+			border-radius: 15px;
+			transition: background-color 0.3s, color 0.3s;
+		}
+
+		/* Active state */
+		.our-projects-nav ul li a.active-btn {
+			background-color: #17c2e1;
+			/* Active background color */
+			color: #fff;
+			/* Active text color */
+		}
+
+		/* Hover state (optional) */
+		.our-projects-nav ul li a:hover {
+			background-color: #17c2e1;
+			/* Hover background color */
+			color: #fff;
+			/* Hover text color */
+		}
+
+
+		/* Optional: Hover effect for all buttons */
+		.our-projects-nav ul li a:hover {
+			background-color: #17c2e1;
+			/* Darker shade for hover effect */
+			color: #fff;
+		}
+	</style>
+
+	<!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="{% static "images/branbik logo 2.png" %}" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+	<!-- Magic Cursor Start -->
+	<div id="magic-cursor">
+		<div id="ball"></div>
+	</div>
+	<!-- Magic Cursor End -->
+
+	<!-- Header Start -->
+
+
+	<header class="main-header">
+		<div class="header-sticky">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<!-- Logo Start -->
+					<a class="navbar-brand" href="index.html">
+						<img src="{% static "images/branbik logo re.png" %}" alt="Logo">
+					</a>
+					<!-- Logo End -->
+
+					<!-- Main Menu Start -->
+					<div class="collapse navbar-collapse main-menu">
+						<div class="nav-menu-wrapper">
+							<ul class="navbar-nav mr-auto" id="menu">
+								<li class="nav-item "><a class="nav-link" href="{% url "index" %}">home</a>
+
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="{% url "about" %}">about us</a></li>
+
+
+                                <li class="nav-item"><a class="nav-link" href="{% url "portfolio" %}">portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url "blog" %}">Blog</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="{% url "service" %}">Service</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="{% url "contact" %}">contacts</a></li>
+
+								<ul>
+									
+								</ul>
+								</li>
+								<!-- <li class="nav-item highlighted-menu"><a class="nav-link" href="contact-us.html">free consultation</a></li>                                -->
+							</ul>
+						</div>
+						<!-- Let’s Start Button Start -->
+						<div class="header-btn d-inline-flex">
+							<a href="https://api.whatsapp.com/send?phone= 90748 51748
+                            &text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+								class="btn-default">connect with us</a>
+						</div>
+						<!-- Let’s Start Button End -->
+					</div>
+					<!-- Main Menu End -->
+
+					<div class="navbar-toggle"></div>
+				</div>
+			</nav>
+			<div class="responsive-menu"></div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+	<!-- Page Header Start -->
+
+	<!-- Page Header End -->
+
+	<!-- Projects Page Start -->
+	<div class="our-projects">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<!-- Sidebar Our Projects Nav start -->
+					<div class="our-projects-nav wow fadeInUp" data-wow-delay="0.25s">
+						<ul>
+							<li><a href="#" class="active-btn" data-filter="*">all</a></li>
+							<!-- <li><a href="#" data-filter=".app">app development</a></li> -->
+							<li><a href="#" data-filter=".digital" >digital marketing</a></li>
+							<li><a href="#" data-filter=".website">website development</a></li>
+							<li><a href="#" data-filter=".graphics">Branding</a></li>
+						</ul>
+					</div>
+					<!-- Sidebar Our Projects Nav End -->
+				</div>
+
+				<div class="col-lg-12">
+
+					<!-- Digital Marketing Section -->
+					
+
+					<!-- Project Item Box start -->
+					<div class="row project-item-boxes">
+						<div class="col-md-6 project-item-box website">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/AES-min-1.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>AES School of Commerce
+									</h2>
+									<p>Crafted a sleek website for AES School of Commerce, highlighting their business
+										programs and faculty with an intuitive design.
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box digital" id="digitalMarketingSection">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/dubai-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Get your Dubai Visa</h2>
+									<p>Boosted visibility for Get Your Dubai Visa with targeted social media campaigns
+										and engaging digital content, driving more inquiries.
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+						<div class="col-md-6 project-item-box digital" id="digitalMarketingSection">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/tenderoutes-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Tenderoutes</h2>
+									<p>Enhanced Tenderoutes' online presence through strategic digital marketing,
+										increasing their reach and customer engagement.
+
+
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+						<div class="col-md-6 project-item-box digital" id="digitalMarketingSection">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/indo-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Indoarab Perfumes</h2>
+									<p> Revitalized brand image with compelling social media strategies and digital advertising that highlighted their luxurious range.
+
+
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box digital" id="digitalMarketingSection">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/ventes-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Ventes Food</h2>
+									<p>Implemented a dynamic digital marketing strategy for Ventes Food, resulting in
+										increased brand awareness and customer interaction.
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box digital" id="digitalMarketingSection">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/chef pillai-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2> Chef Pillai Restaurant</h2>
+									<p> Transformed Chef Pillai Restaurant's online engagement with tailored social
+										media campaigns and effective digital marketing tactics.
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+						<div class="col-md-6 project-item-box digital" id="digitalMarketingSection">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/galaxy-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Galaxon Max</h2>
+									<p>Designed a vibrant website for Galaxon Paints, showcasing their innovative
+										products and colors with a user-friendly interface.
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box digital" id="digitalMarketingSection">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/greensdoor-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Greendoor Organics</h2>
+									<p>Crafted impactful social media marketing and digital campaigns for Greendoor
+										Organics, showcasing their eco-friendly products effectively.
+
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box website">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/galaxyweb-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Galaxon Paints</h2>
+									<p>Designed a vibrant website for Galaxon Paints, showcasing their innovative
+										products and colors with a user-friendly interface.</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+						<div class="col-md-6 project-item-box website">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/FLYKITE-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>FlyKite Holidays</h2>
+									<p>Created an inspiring website for FlyKite Holidays, featuring stunning travel
+										packages and easy booking options for dream vacations.
+										.</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box website">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/dubaivisa.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Get your Dubai Visa</h2>
+									<p>Boosted visibility for Get Your Dubai Visa with targeted social media campaigns
+										and engaging digital content, driving more inquiries.
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+						<div class="col-md-6 project-item-box website">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/MIKARA-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Mikara Organics</h2>
+									<p>Designed a serene website for Mikara Organics, reflecting their commitment to
+										eco-friendly products with a clean, inviting layout.
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box website">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/SCITOR-min.jpeg" %}"" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Scitor Academy</h2>
+									<p>Developed an engaging site for Scitor Academy, featuring interactive course
+										details and user-friendly navigation for prospective students.
+
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box website">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/BEEKAYFISH-min.jpeg" %}"" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Beekay Fisheries</h2>
+									<p>Crafted a clean website for Beekay Fisheries, highlighting their premium seafood
+										and industry expertise with easy navigation.
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box website">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/GENCHI-min.jpeg" %}"" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Genchi Globel</h2>
+									<p>Built a modern website for Genchi Globel, showcasing their global expertise and
+										solutions with a sleek, professional design.
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box website">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/web.jpg" %}"" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Zayior Resort</h2>
+									<p>We had the pleasure of designing and developing a stunning website for Zayior Resort, aimed at capturing the essence of luxury and relaxation that defines their brand.
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/CYBERSEED-min.jpeg" %}"" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Cyberseed</h2>
+									<p>Crafted a cutting-edge brand identity for Cyberseed, emphasizing their
+										tech-forward consultancy services.
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/FINANCEVA-min.jpeg" %}"" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Financeva</h2>
+									<p> Created a sophisticated brand identity for Financeva, highlighting their
+										expertise in finance consultancy.
+
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/INDOARAB 1-min.jpeg" %}"" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Indoarab Perfumes</h2>
+									<p> Crafted an exotic and luxurious brand for Indoarab Perfumes, blending tradition
+										with modern elegance.
+
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/MPB-min.jpeg" %}"" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>MPB Group</h2>
+									<p> Developed a professional and dynamic brand identity for MPB Group, underscoring
+										their versatile business solutions.
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/WALLUX 1-min.jpeg" %}"" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2> Wallux Materials</h2>
+									<p> Developed a strong and innovative brand for Wallux Materials, highlighting their
+										advanced material solutions.
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/DREV-min.jpeg" %}"" alt="">
+
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>DR ev</h2>
+									<p> Developed a sleek, modern brand for DR ev, reflecting their innovation in EV
+										accessories.
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box digital" id="digitalMarketingSection">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/BABAGANOUSH.jpeg" %}"" alt="">
+
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Baba Ganoush,</h2>
+									<p>Boosted Baba Ganoush's online visibility with strategic digital marketing and
+										social media engagement, attracting more food enthusiasts.
+
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box digital" id="digitalMarketingSection">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/aes-min.jpeg" %}"" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>AES School of Commerce</h2>
+									<p>Revamped AES School of Commerce’s digital strategy with targeted social media campaigns and optimized online content.
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+
+
+
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/GLANSA-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Glansa Travels</h2>
+									<p> Designed an elegant brand for Glansa Travels, capturing their premium travel
+										experience.
+
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/HEADLINE-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Headline Pharmacy</h2>
+									<p> Formulated a trusted and approachable brand identity for Headline Pharmacy,
+										focusing on reliability and care.
+
+
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+
+
+
+
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/MPB-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>MPB Group</h2>
+									<p> Developed a professional and dynamic brand identity for MPB Group, underscoring
+										their versatile business solutions.
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/SCITOR-min-2.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>Scitor Academy</h2>
+									<p> Created an innovative and engaging brand for Scitor Academy, reflecting their
+										commitment to educational excellence.
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/SHE TALKS-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>She Talks</h2>
+									<p> esigned a vibrant and empowering brand for She Talks, celebrating women's voices
+										and perspectives.
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+
+						<div class="col-md-6 project-item-box graphics">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/WE ON WHEELS-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2> We On Wheels</h2>
+									<p> Created a user-friendly and dynamic brand for We On Wheels, enhancing their
+										app’s appeal and functionality.
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+						<div class="col-md-6 project-item-box digital" id="digitalMarketingSection">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/WE ON WEELS-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2> We On Wheels</h2>
+									<p> Created a user-friendly and dynamic brand for We On Wheels, enhancing their
+										app’s appeal and functionality.
+
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+
+
+						<div class="col-md-6 project-item-box website">
+							<!-- Works Item Start -->
+							<div class="works-item">
+								<div class="works-image">
+									<figure class="image-anime">
+										<img src="{% static "images/AVCRUSHER-min.jpeg" %}" alt="">
+									</figure>
+								</div>
+								<div class="works-content">
+									<h2>AV Crusher</h2>
+									<p>Designed a sleek website for AV Crusher, focusing on their innovative solutions
+										with a clear, functional layout.
+									</p>
+								</div>
+							</div>
+							<!-- Works Item End -->
+						</div>
+
+
+
+
+
+
+					</div>
+					<!-- Project Item Box End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Projects Page End -->
+
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Mega Footer Start -->
+					<div class="mega-footer">
+						<div class="row">
+							<div class="col-lg-6 col-md-12">
+								<!-- Footer About Start -->
+								<div class="footer-about">
+									<figure>
+										<img src="{% static "images/branbik logo 1.png" %}" alt="">
+									</figure>
+									<p>Digital Transformation Agency</p>
+									<ul>
+										<li><a href="info@brandbik.com">info@brandbik.com</a></li>
+										<li><a href="+91 90748 5174">+91 90748 51748
+											</a></li>
+										<li><a href="+91 8075347955">+91 8075347955</a></li>
+									</ul>
+								</div>
+								<!-- Footer About End -->
+							</div>
+
+							<div class="col-lg-2 col-md-4">
+								<!-- Footer Links Start -->
+								<div class="footer-links">
+									<h2>pages</h2>
+									<ul>
+										<li><a href="#">Home</a></li>
+										<li><a href="#">About Us</a></li>
+
+										<li><a href="#contact-us.html">Contact Us</a></li>
+									</ul>
+								</div>
+								<!-- Footer Links End -->
+							</div>
+
+							<div class="col-lg-2 col-md-4">
+								<!-- Footer Links Start -->
+								<div class="footer-links">
+									<h2>Socials</h2>
+									<ul>
+										<li><a href="https://www.instagram.com/brandbik_creatives?igsh=MWo0Nm9vZzRuZzJhdA==
+                                            ">instagram</a></li>
+										<li><a href="#">facebook</a></li>
+										<li><a href="https://x.com/brandbik?t=TgQKNPUWVKHGhGHD-yaAdg&s=08">twitter</a>
+										</li>
+										<li><a href="https://www.linkedin.com/company/brandbik-creatives/
+                                            ">linkedin</a></li>
+									</ul>
+								</div>
+								<!-- Footer Links End -->
+							</div>
+
+							<div class="col-lg-2 col-md-4">
+								<!-- Footer Links Start -->
+								<div class="footer-links">
+									<h2>services</h2>
+									<ul>
+										<li><a href="#" id="webDevelopmentLink">Web development</a></li>
+										<li><a href="#">Digital Marketing</a></li>
+										<li><a href="#">Branding</a></li>
+										<li><a href="#">
+											</a>Digital Transformation
+										</li>
+										<li><a href="#">Advertising</a></li>
+									</ul>
+								</div>
+								<!-- Footer Links End -->
+							</div>
+						</div>
+					</div>
+					<!-- Mega Footer End -->
+
+					<!-- Copyright Footer Start -->
+					<div class="footer-copyright">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<!-- Footer Copyright Content Start -->
+								<div class="footer-copyright-text">
+									<p>Copyright © 2024 Brandbik All rights reserved.</p>
+								</div>
+								<!-- Footer Copyright Content End -->
+							</div>
+							<div class="col-lg-6">
+								<!-- Footer Policy Links Start -->
+								<div class="footer-policy-links">
+									<ul>
+										<li><a href="#">privacy policy</a></li>
+										<li><a href="#">terms of service</a></li>
+										<li class="highlighted"><a href="#top">go to top</a></li>
+									</ul>
+								</div>
+								<!-- Footer Policy Links End -->
+							</div>
+						</div>
+					</div>
+					<!-- Copyright Footer End -->
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End -->
+	<!-- Jquery Library File -->
+	 <!-- Jquery Library File -->
+	 <script src="{% static "js/jquery-3.7.1.min.js" %}"></script>
+	 <!-- Bootstrap js file -->
+	 <script src="{% static "js/bootstrap.min.js" %}"></script>
+	 <!-- Validator js file -->
+	 <script src="{% static "js/validator.min.js" %}"></script>
+	 <!-- SlickNav js file -->
+	 <script src="{% static "js/jquery.slicknav.js" %}"></script>
+	 <!-- Swiper js file -->
+	 <script src="{% static "js/swiper-bundle.min.js" %}"></script>
+	 <!-- Counter js file -->
+	 <script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+	 <script src="{% static "js/jquery.counterup.min.js" %}"></script>
+	 <!-- Isotop js file -->
+	 <script src="{% static "js/isotope.min.js" %}"></script>
+	 <!-- Magnific js file -->
+	 <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+	 <!-- SmoothScroll -->
+	 <script src="{% static "js/SmoothScroll.js" %}"></script>
+	 <!-- MagicCursor js file -->
+	 <script src="{% static "js/gsap.min.js" %}"></script>
+	 <script src="{% static "js/magiccursor.js" %}"></script>
+	 <!-- Text Effect js file -->
+	 <script src="{% static "js/SplitText.js" %}"></script>
+	 <script src="{% static "js/ScrollTrigger.min.js" %}"></script>
+	 <!-- Wow js file -->
+	 <script src="{% static "js/wow.js" %}"></script>
+	 <!-- Main Custom js file -->
+	 <script src="{% static "js/function.js" %}"></script>
+		// JavaScript to show the gallery when the link is clicked
+		document.addEventListener('DOMContentLoaded', function () {
+			// Make sure Digital Marketing section is visible initially
+			var digitalMarketingSection = document.getElementById('digitalMarketingSection');
+			digitalMarketingSection.classList.add('active');
+		});
+
+		document.getElementById('webDevelopmentLink').addEventListener('click', function (event) {
+			event.preventDefault(); // Prevent the default link behavior
+
+			// Hide the Digital Marketing section
+			var digitalMarketingSection = document.getElementById('digitalMarketingSection');
+			digitalMarketingSection.classList.remove('active');
+
+			// Show/Hide the Web Development section
+			var webDevelopmentSection = document.getElementById('webDevelopmentSection');
+			if (webDevelopmentSection.classList.contains('active')) {
+				webDevelopmentSection.classList.remove('active');
+			} else {
+				webDevelopmentSection.classList.add('active');
+			}
+		});
+
+
+
+// 		$('.our-projects-nav a').on('click', function() {
+//     var filterValue = $(this).attr('data-filter');
+//     $('.projects').isotope({ filter: filterValue });
+//     $('.our-projects-nav a').removeClass('active-btn');
+//     $(this).addClass('active-btn');
+// });
+
+	</script>
+</body>
+
+<!-- Mirrored from demo.awaikenthemes.com/html-preview/weebix/portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Aug 2024 05:22:39 GMT -->
+
+</html>

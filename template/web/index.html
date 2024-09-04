@@ -1,0 +1,784 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Awaiken">
+    <!-- Page Title -->
+    <title>Brandbik</title>
+    <!-- Favicon Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "favicon/apple-touch-icon.png" %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon/favicon-32x32.png" %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon/favicon-16x16.png" %}" >
+    <link rel="manifest" href="{% static "favicon/site.webmanifest" %}">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Css -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="{% static "css/slicknav.min.css" %}" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href"{% static "css/swiper-bundle.min.css" %}">
+    <!-- Font Awesome Icon Css-->
+    <link href="{% static "css/all.css" %}" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="{% static "css/animate.css" %}" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+    <!-- Main Custom Css -->
+    <link href="{% static "css/custom.css" %}" rel="stylesheet" media="screen">
+</head>
+
+<body class="tt-magic-cursor">
+    <style>
+        #gradin {
+
+            position: relative;
+            /* Position the text element */
+            font-weight: bold;
+            /* Make the text bold */
+            background: linear-gradient(to right, #3773fd 0%, #0fe3f6  51%,#3773fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+       
+    </style>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="{% static "images/branbik logo 2.png" %}" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Magic Cursor Start -->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
+
+    <!-- Header Start -->
+
+
+    <header class="main-header">
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="{% static "images/branbik logo re.png" %}" alt="Logo">
+                    </a>
+                    <!-- Logo End -->
+
+                    <!-- Main Menu Start -->
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item "><a class="nav-link" href="{% url "index" %}">home</a>
+
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="{% url "about" %}">about us</a></li>
+
+
+                                <li class="nav-item"><a class="nav-link" href="{% url "portfolio" %}">portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url "blog" %}">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url "service" %}">Service</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="{% url "contact" %}">contacts</a></li>
+
+                                <!-- <ul>                                        
+                                        <li class="nav-item"><a class="nav-link" href="service-single.html">service details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="portfolio-single.html">portfolio details </a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQ</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
+                                    </ul> -->
+                                </li>
+                                <!-- <li class="nav-item highlighted-menu"><a class="nav-link" href="contact-us.html">free consultation</a></li>                                -->
+                            </ul>
+                        </div>
+                        <!-- Let’s Start Button Start -->
+                        <div class="header-btn d-inline-flex">
+                            <a href="https://api.whatsapp.com/send?phone=9074851748
+                            &text=Hello!" class="btn-default">Connect with us</a>
+                        </div>
+                        <!-- Let’s Start Button End -->
+                    </div>
+                    <!-- Main Menu End -->
+
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <div class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <!-- Hero Content Start -->
+                    <div class="hero-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+
+                            <h1 class="text-anime-style-3"> Innovative web and mobile app to elevate
+                            </h1>
+                            <h1 id="gradin">Your Business</h1>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Hero Body Start -->
+                        <div class="hero-body">
+                            <p class="wow fadeInUp" data-wow-delay="0.5s">We develop high-performing web and mobile apps
+                                that bring your vision to life. Our expert team delivers seamless, user-friendly digital
+                                solutions to drive your business forward.</p>
+                        </div>
+                        <!-- Hero Body End -->
+
+                        <!-- Hero Footer Start -->
+                        <div class="hero-footer">
+                            <a href="https://api.whatsapp.com/send?phone=9074851748&text=Hello!"
+                                class="btn-default wow fadeInUp" data-wow-delay="0.75s">connect with us</a>
+                        </div>
+                        <!-- Hero Footer End -->
+                    </div>
+                    <!-- Hero Left Content End -->
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Hero Video Image Start -->
+                    <div class="hero-video-image">
+                        <div class="hero-image">
+                            <figure class="image-anime reveal">
+                                <img src="{% static "images/24097 1.png" %}" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="hero-play-button">
+                            <a href="https://www.instagram.com/brandbik_creatives?igsh=MWo0Nm9vZzRuZzJhdA=="><i
+                                    class="fa-solid fa-play"></i></a>
+                        </div>
+                    </div>
+                    <!-- Hero Video Image End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <div class="about-us">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-8">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">about Company</h3>
+                        <h2 class="text-anime-style-3">Websites and Solutions That Transform Your Brand
+
+                        </h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- About Us Image Start -->
+                    <div class="about-image">
+                        <div class="about-img">
+                            <figure class="image-anime reveal">
+                                <img src="{% static "images/26576.jpeg" %}" alt="">
+                            </figure>
+                        </div>
+                        <div class="about-consultation">
+                            <figure>
+                                <img src="{% static "images/about-circle.png" %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- About Us Image End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- About Us Content Start -->
+                    <div class="about-content">
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">we specialize in driving digital transformation
+                            through innovative web development, compelling branding, and cutting-edge app development.
+                            Our mission is to craft solutions that not only tell your brand's story but also elevate it
+                            to new heights.
+                            .</p>
+
+                        <p class="wow fadeInUp" data-wow-delay="0.5s">With a commitment to excellence, our team
+                            navigates the complexities of the digital landscape to deliver impactful results. We
+                            understand the nuances of creating powerful digital experiences and are dedicated to helping
+                            you thrive in an ever-evolving market..</p>
+
+                        <!-- <p class="wow fadeInUp" data-wow-delay="0.75s">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p> -->
+
+                        <ul class="wow fadeInUp" data-wow-delay="1s">
+                            <li>Seamless Growth
+                            </li>
+                            <li>Effortless Scaling
+                            </li>
+                            <li>Proven Expertise
+                            </li>
+                            <li>Proactive Support
+                            </li>
+                            <li>Global Availability
+                            </li>
+                            <li>Active Assistance</li>
+                        </ul>
+
+                        <a href="https://api.whatsapp.com/send?phone=9074851748
+                            &text=Hello!" class="btn-default">contact with us</a>
+                    </div>
+                    <!-- About Us Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
+
+    <!-- Our Services Section Start -->
+    <div class="our-services">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-7 col-md-7">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">our services</h3>
+                        <h2 class="text-anime-style-3">What we can offer today</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+
+                <div class="col-lg-5 col-md-5">
+                    <!-- Section Btn Start -->
+                    <div class="section-btn">
+                        <a href="portfolio.html" class="btn-default wow fadeInUp" data-wow-delay="0.25s">view all
+                            services</a>
+                    </div>
+                    <!-- Section Btn End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>web development</h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}" alt=""></a>
+                            </div>
+                            <p>Transformative Web Solutions That Captivate and Convert
+                                .</p>
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-1.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>App Development
+                                </h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}" alt=""></a>
+                            </div>
+                            <p>Innovative Apps That Enhance User Engagement and Drive Growth
+                                .</p>
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-2.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>Branding
+                                </h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}" alt=""></a>
+                            </div>
+                            <p>Crafting Powerful Brand Identities That Resonate
+                                .</p>
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-3.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="1s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2> Digital Marketing
+                                </h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}" alt=""></a>
+                            </div>
+                            <p>Strategies That Drive Traffic, Engagement, and Conversions
+
+                                .</p>
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-4.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="1.25s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>Digital Transformation
+                                </h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}" alt=""></a>
+                            </div>
+                            <p>Elevate Your Business Through Innovative Digital Solutions
+                                .</p>
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-5.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <h2>Advertising
+                                </h2>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}" alt=""></a>
+                            </div>
+                            <p>Maximize Your Reach with Targeted Advertising Campaigns.</p>
+                        </div>
+                        <div class="service-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/service-img-6.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Services Section End -->
+
+    <!-- Our Work Section Start -->
+    <div class="our-work">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-8 col-md-9">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">our works</h3>
+                        <h2 class="text-anime-style-3">Excellence from concept to completion</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+
+                <div class="col-lg-4 col-md-3">
+                    <!-- Section Btn Start -->
+                    <div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
+                        <a href="portfolio.html" class="btn-default">all portfolio</a>
+                    </div>
+                    <!-- Section Btn End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Works Item Start -->
+                    <div class="works-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="works-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/hording.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                        <div class="works-content">
+                            <h2>Branding for Cyberceed
+                            </h2>
+                            <p>We partnered with Cyberceed to elevate their brand and establish a powerful, recognizable
+                                presence in the consultancy industry.</p>
+                        </div>
+                    </div>
+                    <!-- Works Item End -->
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Works Item Start -->
+                    <div class="works-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="works-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/rebran.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                        <div class="works-content">
+                            <h2>Brand Identity for Prozoman
+                            </h2>
+                            <p>We had the pleasure of working with Prozoman to develop a compelling brand identity that
+                                captures their innovative essence and positions them effectively in the market.</p>
+                        </div>
+                    </div>
+                    <!-- Works Item End -->
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Works Item Start -->
+                    <div class="works-item wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="works-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/social 1.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                        <div class="works-content">
+                            <h2>Social Media Marketing
+                            </h2>
+                            <p>we have successfully executed social media marketing campaigns for a wide range of
+                                industries, driving engagement and growth across various platforms..</p>
+                        </div>
+                    </div>
+                    <!-- Works Item End -->
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Works Item Start -->
+                    <div class="works-item wow fadeInUp" data-wow-delay="1s">
+                        <div class="works-image">
+                            <figure class="image-anime">
+                                <img src="{% static "images/web.jpg" %}" alt="">
+                            </figure>
+                        </div>
+                        <div class="works-content">
+                            <h2>Website Development for Zayior Resort
+                            </h2>
+                            <p>We had the pleasure of designing and developing a stunning website for Zayior Resort,
+                                aimed at capturing the essence of luxury and relaxation that defines their brand.</p>
+                        </div>
+                    </div>
+                    <!-- Works Item End -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Our Work Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <div class="why-choose-us">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-8 col-md-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">why choose us</h3>
+                        <h2 class="text-anime-style-3">Why choose us ?</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="icon-box">
+                            <img src="{% static "images/icon-whyus-1.svg" %}" alt="">
+                        </div>
+                        <h3>Proven Expertise and Experience
+                        </h3>
+                        <p>We have a proven track record of delivering successful projects and driving significant
+                            results for our clients.
+                            .</p>
+                    </div>
+                    <!-- Why Choose Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="icon-box">
+                            <img src="{% static "images/icon-whyus-2.svg" %}" alt="">
+                        </div>
+                        <h3>Tailored Solutions for Your Unique Needs
+                        </h3>
+                        <p>we provide customized solutions designed specifically to meet your individual needs and
+                            objectives.
+                        </p>
+                    </div>
+                    <!-- Why Choose Item End -->
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Why Choose Item Start -->
+                    <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="icon-box">
+                            <img src="{% static "images/icon-whyus-3.svg" %}" alt="">
+                        </div>
+                        <h3>Commitment to Excellence and Results
+                        </h3>
+                        <p>Our focus is on delivering high-quality results that drive growth and enhance your business’s
+                            digital presence.</p>
+                    </div>
+                    <!-- Why Choose Item End -->
+                </div>
+
+                <div class="col-md-12">
+                    <!-- Why Us Explore Item Start -->
+                    <div class="why-us-explore-item">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="why-us-section-title">
+                                    <!-- Section Title Start -->
+                                    <div class="section-title">
+                                        <h2 class="text-anime-style-3">Curious About Our Outstanding Work?
+                                        </h2>
+                                    </div>
+                                    <!-- Section Title End -->
+
+                                    <!-- Explore Item Icon Start -->
+                                    <div class="explore-item-icon">
+                                        <img src="{% static "images/icon-whyus-4.svg" %}" alt="">
+                                    </div>
+                                    <!-- Explore Item Icon End -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <!-- Explore Item Content Start -->
+                                <div class="explore-item-content wow fadeInUp" data-wow-delay="0.25s">
+                                    <p>Discover how we bring ideas to life with creativity and precision. Our portfolio
+                                        showcases a diverse range of projects, each reflecting our commitment to
+                                        excellence and innovation. Whether you’re interested in seeing how we’ve
+                                        transformed brand identities, crafted compelling digital experiences, or
+                                        executed dynamic social media campaigns, our work speaks for itself.</p>
+                                </div>
+                                <!-- Explore Item Content End -->
+                            </div>
+
+                            <div class="col-lg-6">
+                                <!-- Explore Item Content Start -->
+                                <div class="explore-item-tags wow fadeInUp" data-wow-delay="0.25s">
+                                    <ul>
+                                        <li><a href="https://www.instagram.com/brandbik_creatives?igsh=MWo0Nm9vZzRuZzJhdA==
+                                            " class="btn-default">instagram</a></li>
+                                        <li><a href="https://www.linkedin.com/company/brandbik-creatives/
+                                            " class="btn-default">linkedin</a></li>
+                                        <li> <a href="https://api.whatsapp.com/send?phone=9074851748
+                                            &text=Hello!" class="btn-default">Connect with us</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Explore Item Content End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Why Us Explore Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
+    <!-- Exclusive Partners Section Start -->
+
+    <!-- Exclusive Partners Section End -->
+
+    <!-- Clients Testimonials Section Start -->
+
+    <!-- Clients Testimonials Section End -->
+
+    <!-- Latest News Section Start -->
+
+    <!-- Latest News Section End -->
+
+    <!-- Footer Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Mega Footer Start -->
+                    <div class="mega-footer">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <!-- Footer About Start -->
+                                <div class="footer-about">
+                                    <figure>
+                                        <img src="{% static "images/branbik logo 1.png" %}" alt="">
+                                    </figure>
+                                    <p>Digital Transformation Agency</p>
+                                    <ul>
+                                        <li><a href="info@brandbik.com">info@brandbik.com</a></li>
+                                        <li><a href="+91 90748 51748">+91 90748 51748
+                                            </a></li>
+                                        <li><a href="+91 8075347955
+                                            ">+91 8075347955
+
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer About End -->
+                            </div>
+
+                            <div class="col-lg-2 col-md-4">
+                                <!-- Footer Links Start -->
+                                <div class="footer-links">
+                                    <h2>pages</h2>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+
+                                        <li><a href="#contact-us.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Links End -->
+                            </div>
+
+                            <div class="col-lg-2 col-md-4">
+                                <!-- Footer Links Start -->
+                                <div class="footer-links">
+                                    <h2>Socials</h2>
+                                    <ul>
+                                        <li><a href="https://www.instagram.com/brandbik_creatives?igsh=MWo0Nm9vZzRuZzJhdA==
+                                            ">instagram</a></li>
+                                        <li><a href="#">facebook</a></li>
+                                        <li><a href="https://x.com/brandbik?t=TgQKNPUWVKHGhGHD-yaAdg&s=08">twitter</a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/company/brandbik-creatives/
+                                            ">linkedin</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Links End -->
+                            </div>
+
+                            <div class="col-lg-2 col-md-4">
+                                <!-- Footer Links Start -->
+                                <div class="footer-links">
+                                    <h2>services</h2>
+                                    <ul>
+                                        <li><a href="#">Web development</a></li>
+                                        <li><a href="#">Digital Marketing</a></li>
+                                        <li><a href="#">Branding</a></li>
+                                        <li><a href="#">
+                                            </a>Digital Transformation
+                                        </li>
+                                        <li><a href="#">Advertising</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Links End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mega Footer End -->
+
+                    <!-- Copyright Footer Start -->
+                    <div class="footer-copyright">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <!-- Footer Copyright Content Start -->
+                                <div class="footer-copyright-text">
+                                    <p>Copyright © 2024 Brandbik All rights reserved.</p>
+                                </div>
+                                <!-- Footer Copyright Content End -->
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- Footer Policy Links Start -->
+                                <div class="footer-policy-links">
+                                    <ul>
+                                        <li><a href="#">privacy policy</a></li>
+                                        <li><a href="#">terms of service</a></li>
+                                        <li class="highlighted"><a href="#top">go to top</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Policy Links End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Copyright Footer End -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="{% static "js/jquery-3.7.1.min.js" %}"></script>
+    <!-- Bootstrap js file -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <!-- Validator js file -->
+    <script src="{% static "js/validator.min.js" %}"></script>
+    <!-- SlickNav js file -->
+    <script src="{% static "js/jquery.slicknav.js" %}"></script>
+    <!-- Swiper js file -->
+    <script src="{% static "js/swiper-bundle.min.js" %}"></script>
+    <!-- Counter js file -->
+    <script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+    <script src="{% static "js/jquery.counterup.min.js" %}"></script>
+    <!-- Isotop js file -->
+    <script src="{% static "js/isotope.min.js" %}"></script>
+    <!-- Magnific js file -->
+    <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <!-- SmoothScroll -->
+    <script src="{% static "js/SmoothScroll.js" %}"></script>
+    <!-- MagicCursor js file -->
+    <script src="{% static "js/gsap.min.js" %}"></script>
+    <script src="{% static "js/magiccursor.js" %}"></script>
+    <!-- Text Effect js file -->
+    <script src="{% static "js/SplitText.js" %}"></script>
+    <script src="{% static "js/ScrollTrigger.min.js" %}"></script>
+    <!-- Wow js file -->
+    <script src="{% static "js/wow.js" %}"></script>
+    <!-- Main Custom js file -->
+    <script src="{% static "js/function.js" %}"></script>
+</body>
+
+<!-- Mirrored from demo.awaikenthemes.com/html-preview/weebix/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Aug 2024 05:22:37 GMT -->
+
+</html>
