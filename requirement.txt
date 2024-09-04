@@ -7,7 +7,6 @@ Django==1.6.11
 django-markwhat==1.6.2
 django-tinymce==4.1.0
 django-versatileimagefield==3.1
-gunicorn==23.0.0
 keyring==5.7.1
 markdown2==2.5.0
 packaging==24.1
