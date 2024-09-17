@@ -986,7 +986,7 @@ header.main-header .header-sticky.active{
 }
 
 .explore-item-tags ul li .btn-default::after{
-    background: var(--accent-color);
+    background: #24a0ed;
 }
 
 /************************************/

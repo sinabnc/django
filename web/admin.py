@@ -1,7 +1,17 @@
 from django.contrib import admin
-from .models import Article,Service
+from .models import Blog,Service
 
-@admin.register(Article)
-class ArticaleAdmin(admin.ModelAdmin):
-    list_display = ('title', 'date', 'meta_title','meta_description')
-admin.site.register(Service)
+@admin.register(Blog)
+class BlogAdmin(admin.ModelAdmin):
+    list_display = (
+        "title",
+    )
+    prepopulated_fields = {"slug": ("title",)}
+
+
+@admin.register(Service)
+class ServiceAdmin(admin.ModelAdmin):
+    list_display = (
+        "name",
+    )
+    prepopulated_fields = {"slug": ("name",)}

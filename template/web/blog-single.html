@@ -1,7 +1,8 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="zxx">
 
-<!-- Mirrored from demo.awaikenthemes.com/html-preview/weebix/blog-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Aug 2024 05:22:43 GMT -->
+
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -11,27 +12,31 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
-	<title>Weebix - IT Service And Technology HTML Template</title>
+	<title>Brandbik</title>
 	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<!-- Google Fonts Css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com/">
-	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
-	<!-- Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- Font Awesome Icon Css-->
-	<link href="css/all.css" rel="stylesheet" media="screen">
-	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
-	<!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Main Custom Css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "favicon/apple-touch-icon.png" %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon/favicon-32x32.png" %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon/favicon-16x16.png" %}" >
+    <link rel="manifest" href="{% static "favicon/site.webmanifest" %}">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Css -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="{% static "css/slicknav.min.css" %}" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href"{% static "css/swiper-bundle.min.css" %}">
+    <!-- Font Awesome Icon Css-->
+    <link href="{% static "css/all.css" %}" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="{% static "css/animate.css" %}" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+    <!-- Main Custom Css -->
+    <link href="{% static "css/custom.css" %}" rel="stylesheet" media="screen">
 </head>
 <body class="tt-magic-cursor">
 
@@ -39,7 +44,7 @@
 	<div class="preloader">
 		<div class="loading-container">
 			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+			<div id="loading-icon"><img src="{% static "images/branbik logo 2.png" %}" alt=""></div>
 		</div>
 	</div>
 	<!-- Preloader End -->
@@ -51,13 +56,15 @@
 	<!-- Magic Cursor End -->
 
     <!-- Header Start -->
+
+    
 	<header class="main-header">
 		<div class="header-sticky">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<!-- Logo Start -->
 					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.svg" alt="Logo">
+						<img src="{% static "images/branbik logo re.png" %}" alt="Logo">
 					</a>
 					<!-- Logo End -->
 
@@ -65,32 +72,27 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">home</a>
-                                    <ul>                                        
-                                        <li class="nav-item"><a class="nav-link" href="index-3.html">Hero Layout 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-2.html">Hero Layout 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-4.html">Hero Layout 3</a></li>
-                                    </ul>
-                                </li>                                
-                                <li class="nav-item"><a class="nav-link" href="about.html">about us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="services.html">services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="portfolio.html">portfolio</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">pages</a>
-                                    <ul>                                        
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">service details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="portfolio-single.html">portfolio details </a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">blog details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQ</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
+                                <li class="nav-item "><a class="nav-link" href="{% url "index" %}">home</a>
+
                                 </li>
-                                <li class="nav-item highlighted-menu"><a class="nav-link" href="contact-us.html">free consultation</a></li>                               
+                                <li class="nav-item"><a class="nav-link" href="{% url "about" %}">about us</a></li>
+
+
+                                <li class="nav-item"><a class="nav-link" href="{% url "portfolio" %}">portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url "blog" %}">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url "service" %}">Service</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="{% url "contact" %}">contacts</a></li>
+
+                       
+                                </li>
+                                <!-- <li class="nav-item highlighted-menu"><a class="nav-link" href="contact-us.html">free consultation</a></li>                                -->
                             </ul>
                         </div>
                         <!-- Let’s Start Button Start -->
                         <div class="header-btn d-inline-flex">
-                            <a href="contact-us.html" class="btn-default">free consultation</a>
+                            <a href="https://api.whatsapp.com/send?phone= 90748 51748
+                            &text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="btn-default">connect with us</a>
                         </div>
                         <!-- Let’s Start Button End -->
 					</div>
@@ -102,7 +104,6 @@
 			<div class="responsive-menu"></div>
 		</div>
 	</header>
-	<!-- Header End -->
 
     <!-- Page Header Start -->
 	<div class="page-header">
@@ -130,11 +131,12 @@
 	<div class="page-single-post">
 		<div class="container">
 			<div class="row">
+				
 				<div class="col-md-12">
 					<!-- Post Featured Image Start -->
 					<div class="post-single-image">
 						<figure class="image-anime reveal">
-							<img src="images/post-single.jpg" alt="">
+							<img src="{{ blog.image.url }}" alt="">
 						</figure>
 					</div>
 					<!-- Post Featured Image Start -->
@@ -143,17 +145,11 @@
 					<div class="post-content">
 						<!-- Post Entry Start -->
 						<div class="post-entry">
-							<p class="wow fadeInUp" data-wow-delay="0.25s">In today's rapidly evolving digital landscape, technology continues to shape the way we live, work, and interact with the world around us. From artificial intelligence and blockchain to virtual reality and quantum computing, the possibilities seem limitless.</p>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.75s">{{ blog.title }}</h2>
 
-							<p class="wow fadeInUp" data-wow-delay="0.5s">In this post, we'll delve into some of the latest advancements and trends reshaping the future of technology: AI is revolutionizing industries ranging from healthcare and finance to manufacturing and transportation. With machine learning algorithms and neural networks becoming increasingly sophisticated, AI has the potential to transform how businesses operate and deliver value to customers.</p>
+							<p class="wow fadeInUp" data-wow-delay="0.25s">{{blog.content|safe}}</p>
 
-                            <h2 class="wow fadeInUp" data-wow-delay="0.75s">Blockchain Technology</h2>
-
-                            <p class="wow fadeInUp" data-wow-delay="1s">Blockchain, the underlying technology behind cryptocurrencies like Bitcoin and Ethereum, is gaining traction beyond the realm of finance. Its decentralized and immutable nature makes it ideal for applications such as supply chain management, identity verification, and smart contracts.</p>
-
-							<blockquote class="wow fadeInUp" data-wow-delay="1.25s">
-								<p>As we look ahead, it's clear that technology will play an increasingly central role in shaping the future of society.</p>
-							</blockquote>
+							
 
 							<ul class="wow fadeInUp" data-wow-delay="1.5s">
 								<li>Quantum computing represents a paradigm shift in computational power.</li>
@@ -168,201 +164,109 @@
 						<!-- Post Entry End -->
 
 						<!-- Post Extra Info Start -->
-						<div class="row align-items-center">
-							<div class="col-lg-8">
-								<!-- Post Tags Start -->
-								<div class="post-tags wow fadeInUp" data-wow-delay="0.25s">
-									<a class="btn-default" href="#">Website</a>
-                                    <a class="btn-default" href="#">App Development</a>
-									<a class="btn-default" href="#">SEO</a>									
-                                    <a class="btn-default" href="#">Graphics Design</a>
-								</div>
-								<!-- Post Tags End -->
-							</div>
-
-							<div class="col-lg-4">
-								<!-- Post Sharing Links Start -->
-								<div class="post-social-links wow fadeInUp" data-wow-delay="0.25s">
-									<ul>
-										<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-									</ul>
-								</div>
-								<!-- Post Sharing Links End -->
-							</div>
-						</div>
+						
 						<!-- Post Extra Info End -->
 					</div>
 					<!-- Post Content End -->
 				</div>
+				
 			</div>
 		</div>		
 	</div>
 	<!-- Single Post Page End -->
 
     <!-- Latest News Section Start -->
-	<div class="latest-news related-articles">
-		<div class="container">
-			<div class="row section-row align-items-center">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">related articles</h3>
-                        <h2 class="text-anime-style-3">You may also like this</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<!-- Blog Item Start -->
-					<div class="blog-item wow fadeInUp" data-wow-delay="0.25s">
-						<!-- Blog Image Start -->
-						<div class="post-featured-image">
-							<figure class="image-anime">
-								<a href="#"><img src="images/post-1.jpg" alt=""></a>
-							</figure>
-						</div>
-						<!-- Blog Image End -->
-
-						<!-- Blog Content Start -->
-						<div class="post-item-body">
-                            <p><a href="#">10 April 2024</a></p>
-							<h2><a href="#">Unlocking the Potential of AI in Business Success</a></h2>                            
-						</div>
-						<!-- Blog Content End -->
-					</div>
-					<!-- Blog Item End -->
-				</div>
-
-                <div class="col-lg-4 col-md-6">
-					<!-- Blog Item Start -->
-					<div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
-						<!-- Blog Image Start -->
-						<div class="post-featured-image">
-							<figure class="image-anime">
-								<a href="#"><img src="images/post-2.jpg" alt=""></a>
-							</figure>
-						</div>
-						<!-- Blog Image End -->
-
-						<!-- blog content Start -->
-						<div class="post-item-body">
-                            <p><a href="#">10 April 2024</a></p>
-							<h2><a href="#">Strategies for Building a Successful Distributed Team</a></h2>                            
-						</div>
-						<!-- Blog Content End -->
-					</div>
-					<!-- Blog Item End -->
-				</div>
-
-                <div class="col-lg-4 col-md-6">
-					<!-- Blog Item Start -->
-					<div class="blog-item wow fadeInUp" data-wow-delay="0.75s">
-						<!-- Blog Image Start -->
-						<div class="post-featured-image">
-							<figure class="image-anime">
-								<a href="#"><img src="images/post-3.jpg" alt=""></a>
-							</figure>
-						</div>
-						<!-- Blog Image End -->
-
-						<!-- Blog Content Start -->
-						<div class="post-item-body">
-                            <p><a href="#">10 April 2024</a></p>
-							<h2><a href="#">Empowering Citizen Developers and Accelerating Innovation</a></h2>                            
-						</div>
-						<!-- Blog Content End -->
-					</div>
-					<!-- Blog Item End -->
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<!-- Latest News Section End -->
 
     <!-- Footer Start -->
 	<footer class="main-footer">
         <div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<!-- Mega Footer Start -->
-					<div class="mega-footer">
-						<div class="row">
-							<div class="col-lg-6 col-md-12">
-								<!-- Footer About Start -->
-								<div class="footer-about">
-									<figure>
-										<img src="images/footer-logo.svg" alt="">
-									</figure>
-									<p>Creative Agency Based on Lorem Ipsum</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Mega Footer Start -->
+                    <div class="mega-footer">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <!-- Footer About Start -->
+                                <div class="footer-about">
+                                    <figure>
+                                        <img src="{% static "images/branbik logo 1.png" %}" alt="">
+                                    </figure>
+                                    <p>Digital Transformation Agency</p>
                                     <ul>
-                                        <li><a href="#">info@domainname.com</a></li>
-                                        <li><a href="#">(+0) 123 456 789</a></li>
+                                        <li><a href="info@brandbik.com">info@brandbik.com</a></li>
+                                        <li><a href="+91 90748 51748">+91 90748 51748
+                                            </a></li>
+                                        <li><a href="+91 8075347955
+                                            ">+91 8075347955
+
+                                            </a></li>
                                     </ul>
-								</div>
-								<!-- Footer About End -->
-							</div>
+                                </div>
+                                <!-- Footer About End -->
+                            </div>
 
-							<div class="col-lg-2 col-md-4">
-								<!-- Footer Links Start -->
-								<div class="footer-links">
-									<h2>pages</h2>
-									<ul>
-										<li><a href="#">Home</a></li>
-										<li><a href="#">About Us</a></li>
-										<li><a href="#">Services</a></li>
-										<li><a href="#">Blog</a></li>
-										<li><a href="#">Contact Us</a></li>
-									</ul>
-								</div>
-								<!-- Footer Links End -->
-							</div>
+                            <div class="col-lg-2 col-md-4">
+                                <!-- Footer Links Start -->
+                                <div class="footer-links">
+                                    <h2>pages</h2>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
 
-							<div class="col-lg-2 col-md-4">
-								<!-- Footer Links Start -->
-								<div class="footer-links">
-									<h2>Socials</h2>
-									<ul>
-										<li><a href="#">instagram</a></li>
-										<li><a href="#">facebook</a></li>
-										<li><a href="#">twitter</a></li>
-										<li><a href="#">linkedin</a></li>
-									</ul>
-								</div>
-								<!-- Footer Links End -->
-							</div>
+                                        <li><a href="#contact-us.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Links End -->
+                            </div>
 
-							<div class="col-lg-2 col-md-4">
-								<!-- Footer Links Start -->
-								<div class="footer-links">
-									<h2>services</h2>
-									<ul>
-										<li><a href="#">web development</a></li>
-										<li><a href="#">digital marketing</a></li>
-										<li><a href="#">game development</a></li>
-										<li><a href="#">mobile app development</a></li>
-										<li><a href="#">networking services</a></li>
-									</ul>
-								</div>
-								<!-- Footer Links End -->
-							</div>
-						</div>
-					</div>
-					<!-- Mega Footer End -->
+                            <div class="col-lg-2 col-md-4">
+                                <!-- Footer Links Start -->
+                                <div class="footer-links">
+                                    <h2>Socials</h2>
+                                    <ul>
+                                        <li><a href="https://www.instagram.com/brandbik_creatives?igsh=MWo0Nm9vZzRuZzJhdA==
+                                            ">instagram</a></li>
+                                        <li><a href="#">facebook</a></li>
+                                        <li><a href="https://x.com/brandbik?t=TgQKNPUWVKHGhGHD-yaAdg&s=08">twitter</a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/company/brandbik-creatives/
+                                            ">linkedin</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Links End -->
+                            </div>
 
-					<!-- Copyright Footer Start -->
-					<div class="footer-copyright">
+                            <div class="col-lg-2 col-md-4">
+                                <!-- Footer Links Start -->
+                                <div class="footer-links">
+                                    <h2>services</h2>
+                                    <ul>
+                                        <li><a href="#">Web development</a></li>
+                                        <li><a href="#">Digital Marketing</a></li>
+                                        <li><a href="#">Branding</a></li>
+                                        <li><a href="#">
+                                            </a>Digital Transformation
+                                        </li>
+                                        <li><a href="#">Advertising</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Links End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mega Footer End -->
+
+                    <!-- Copyright Footer Start -->
+                    <div class="footer-copyright">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <!-- Footer Copyright Content Start -->
-								<div class="footer-copyright-text">
-									<p>Copyright © 2024 weebix. All rights reserved.</p>
-								</div>
-								<!-- Footer Copyright Content End -->
+                                <div class="footer-copyright-text">
+                                    <p>Copyright © 2024 Brandbik All rights reserved.</p>
+                                </div>
+                                <!-- Footer Copyright Content End -->
                             </div>
                             <div class="col-lg-6">
                                 <!-- Footer Policy Links Start -->
@@ -375,45 +279,46 @@
                                 </div>
                                 <!-- Footer Policy Links End -->
                             </div>
-                        </div>						
-					</div>
-					<!-- Copyright Footer End -->
-				</div>
-			</div>
-		</div>
+                        </div>
+                    </div>
+                    <!-- Copyright Footer End -->
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- Footer End -->
 
     <!-- Jquery Library File -->
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="{% static "js/jquery-3.7.1.min.js" %}"></script>
     <!-- Bootstrap js file -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
     <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
+    <script src="{% static "js/validator.min.js" %}"></script>
     <!-- SlickNav js file -->
-    <script src="js/jquery.slicknav.js"></script>
+    <script src="{% static "js/jquery.slicknav.js" %}"></script>
     <!-- Swiper js file -->
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="{% static "js/swiper-bundle.min.js" %}"></script>
     <!-- Counter js file -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
+    <script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+    <script src="{% static "js/jquery.counterup.min.js" %}"></script>
     <!-- Isotop js file -->
-	<script src="js/isotope.min.js"></script>
+    <script src="{% static "js/isotope.min.js" %}"></script>
     <!-- Magnific js file -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
     <!-- SmoothScroll -->
-    <script src="js/SmoothScroll.js"></script>
+    <script src="{% static "js/SmoothScroll.js" %}"></script>
     <!-- MagicCursor js file -->
-    <script src="js/gsap.min.js"></script>
-    <script src="js/magiccursor.js"></script>
+    <script src="{% static "js/gsap.min.js" %}"></script>
+    <script src="{% static "js/magiccursor.js" %}"></script>
     <!-- Text Effect js file -->
-	<script src="js/SplitText.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="{% static "js/SplitText.js" %}"></script>
+    <script src="{% static "js/ScrollTrigger.min.js" %}"></script>
     <!-- Wow js file -->
-    <script src="js/wow.js"></script>
+    <script src="{% static "js/wow.js" %}"></script>
     <!-- Main Custom js file -->
-    <script src="js/function.js"></script>
+    <script src="{% static "js/function.js" %}"></script>
 </body>
 
-<!-- Mirrored from demo.awaikenthemes.com/html-preview/weebix/blog-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Aug 2024 05:22:44 GMT -->
+<!-- Mirrored from demo.awaikenthemes.com/html-preview/weebix/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Aug 2024 05:22:37 GMT -->
+
 </html>

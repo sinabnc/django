@@ -1,47 +1,52 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="zxx">
 
-<!-- Mirrored from demo.awaikenthemes.com/html-preview/weebix/service-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Aug 2024 05:22:40 GMT -->
+
 <head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken">
-	<!-- Page Title -->
-	<title>Weebix - IT Service And Technology HTML Template</title>
-	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<!-- Google Fonts Css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com/">
-	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
-	<!-- Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- Font Awesome Icon Css-->
-	<link href="css/all.css" rel="stylesheet" media="screen">
-	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
-	<!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Main Custom Css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Awaiken">
+    <!-- Page Title -->
+    <title>Brandbik</title>
+    <!-- Favicon Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "favicon/apple-touch-icon.png" %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon/favicon-32x32.png" %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon/favicon-16x16.png" %}" >
+    <link rel="manifest" href="{% static "favicon/site.webmanifest" %}">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Css -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="{% static "css/slicknav.min.css" %}" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href"{% static "css/swiper-bundle.min.css" %}">
+    <!-- Font Awesome Icon Css-->
+    <link href="{% static "css/all.css" %}" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="{% static "css/animate.css" %}" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+    <!-- Main Custom Css -->
+    <link href="{% static "css/custom.css" %}" rel="stylesheet" media="screen">
 </head>
 <body class="tt-magic-cursor">
 
     <!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div>
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="{% static "images/branbik logo 2.png" %}" alt=""></div>
+        </div>
+    </div>
 	<!-- Preloader End -->
 
 	<!-- Magic Cursor Start -->
@@ -57,7 +62,7 @@
 				<div class="container">
 					<!-- Logo Start -->
 					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.svg" alt="Logo">
+						<img src="{% static "images/logo.svg" %}" alt="Logo">
 					</a>
 					<!-- Logo End -->
 
@@ -113,11 +118,7 @@
 					<div class="page-header-box">
 						<h1 class="text-anime-style-3">Web Development</h1>
 						<nav class="wow fadeInUp" data-wow-delay="0.25s">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="#">home</a></li>
-								<li class="breadcrumb-item"><a href="#">services</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Web Development</li>
-							</ol>
+							
 						</nav>
 					</div>
 					<!-- Page Header Box End -->
@@ -128,39 +129,44 @@
 	<!-- Page Header End -->
 
     <!-- Single Service Page Start -->
+    
     <div class="page-service-single">
         <div class="container">
             <div class="row">
+                
                 <div class="col-lg-8">
 					<!-- Service Content Start -->
 					<div class="service-single-content">
 						<!-- Service Featured Image Start -->
 						<div class="service-featured-image">
 							<figure class="image-anime reveal">
-								<img src="images/service-feature-img.jpg" alt="">
+								<img src="{{ service.image.url }}" alt="">
 							</figure>
 						</div>
 						<!-- Service Featured Image End -->
 						
 						<!-- Service Entry Content Start -->
 						<div class="service-entry">
-							<p class="wow fadeInUp" data-wow-delay="0.25s">Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ndustry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
-							<p class="wow fadeInUp" data-wow-delay="0.5s">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged Lorem ipsum dolor sit amet consec tetur adipis icing elit.</p>
-                            <p class="wow fadeInUp" data-wow-delay="0.75s">Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ndustry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+							
+							<p class="wow fadeInUp" data-wow-delay="0.5s">{{ service.description}}</p>
+                            
 						</div>
 						<!-- Service Entry Content End -->
 					</div>
 					<!-- Service Content End -->
 				</div>
+               
+
+               
 
                 <div class="col-lg-4">
 					<div class="service-sidebar">
 						<!-- Service List Box Start -->
 						<div class="services-list-box wow fadeInUp" data-wow-delay="0.5s">
                             <div class="icon-box">
-                                <img src="images/icon-service-list.svg" alt="">
+                                <img src="{% static "images/icon-service-list.svg" %}" alt="">
                             </div>
-                            <h3>website development</h3>
+                            <h3>{{ service.name }}</h3>
 							<ul>
 								<li><a href="#">WordPress Support & Maintenance</a></li>
 								<li><a href="#">1,000+ Completed Projects</a></li>
@@ -169,11 +175,13 @@
 								<li><a href="#">Fast Load Time</a></li>
 								<li><a href="#">Easy Back-End Admin Panel</a></li>
 							</ul>
-                            <a href="#" class="btn-default">contact now</a>
+                            <a href="https://api.whatsapp.com/send?phone=9074851748
+                            &text=Hello!" class="btn-default">contact now</a>
 						</div>
 						<!-- Service List Box End -->
 					</div>
 				</div>
+                
             </div>
         </div>
     </div>
@@ -199,7 +207,7 @@
                     <!-- Why Choose Item Start -->
                     <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.25s">
                         <div class="icon-box">
-                            <img src="images/icon-whyus-1.svg" alt="">
+                            <img src="{% static "images/icon-whyus-1.svg" %} alt="">
                         </div>
                         <h3>powerful framework</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
@@ -211,7 +219,7 @@
                     <!-- Why Choose Item Start -->
                     <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.5s">
                         <div class="icon-box">
-                            <img src="images/icon-whyus-2.svg" alt="">
+                            <img src="{% static "images/icon-whyus-2.svg" %}" alt="">
                         </div>
                         <h3>quality-focused</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
@@ -223,7 +231,7 @@
                     <!-- Why Choose Item Start -->
                     <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.75s">
                         <div class="icon-box">
-                            <img src="images/icon-whyus-3.svg" alt="">
+                            <img src="{% static "images/icon-whyus-3.svg" %} alt="">
                         </div>
                         <h3>value for money</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
@@ -254,7 +262,7 @@
                     <div class="your-choice-item wow fadeInUp" data-wow-delay="0.25s">
                         <div class="your-choice-title">
                             <h2>Fixed Price Model</h2>
-                            <a href="#"><img src="images/icon-choice-1.svg" alt=""></a>
+                            <a href="#"><img src="{% static "images/icon-choice-1.svg" %}" alt=""></a>
                         </div>
                         <ul>
                             <li><a href="#">Fixed time frames</a></li>
@@ -271,7 +279,7 @@
                     <div class="your-choice-item wow fadeInUp" data-wow-delay="0.5s">
                         <div class="your-choice-title">
                             <h2>Time & Material Model</h2>
-                            <a href="#"><img src="images/icon-choice-2.svg" alt=""></a>
+                            <a href="#"><img src="{% static "images/icon-choice-2.svg" %} alt=""></a>
                         </div>
                         <ul>
                             <li><a href="#">Low risk</a></li>
@@ -287,7 +295,7 @@
                     <div class="your-choice-item wow fadeInUp" data-wow-delay="0.75s">
                         <div class="your-choice-title">
                             <h2>Dedicated Team Model</h2>
-                            <a href="#"><img src="images/icon-choice-3.svg" alt=""></a>
+                            <a href="#"><img src="{% static "images/icon-choice-3.svg" %}" alt=""></a>
                         </div>
                         <ul>
                             <li><a href="#">Low Risk</a></li>
@@ -333,13 +341,13 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h2>web development</h2>
-                                <a href="#"><img src="images/arrow.svg" alt=""></a>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}" alt=""></a>
                             </div>
                             <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>                            
                         </div>
                         <div class="service-image">
                             <figure class="image-anime">
-                                <img src="images/service-img-1.jpg" alt="">
+                                <img src="{% static "images/service-img-1.jpg" %}" alt="">
                             </figure>
                         </div>
                     </div>
@@ -352,13 +360,13 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h2>Digital Marketing</h2>
-                                <a href="#"><img src="images/arrow.svg" alt=""></a>
+                                <a href="#"><img src="{% static "images/arrow.svg" %}" alt=""></a>
                             </div>
                             <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                         </div>
                         <div class="service-image">
                             <figure class="image-anime">
-                                <img src="images/service-img-2.jpg" alt="">
+                                <img src="{% static "images/service-img-2.jpg" %}" alt="">
                             </figure>
                         </div>
                     </div>
@@ -371,13 +379,13 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h2>Game Development</h2>
-                                <a href="#"><img src="images/arrow.svg" alt=""></a>
+                                <a href="#"><img src="{% static "images/arrow.svg" %} alt=""></a>
                             </div>
                             <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                         </div>
                         <div class="service-image">
                             <figure class="image-anime">
-                                <img src="images/service-img-3.jpg" alt="">
+                                <img src="{% static "images/service-img-3.jpg" %}" alt="">
                             </figure>
                         </div>
                     </div>
@@ -483,14 +491,14 @@
                         </div>
                         <div class="ask-contact-list">
                             <div class="icon-box">
-                                <a href="#"><img src="images/icon-phone.svg" alt=""></a>
+                                <a href="#"><img src="{% static "images/icon-phone.svg" %} alt=""></a>
                             </div>
                             <a href="#"><span>Phone:</span> (+0) 123 456 789</a>
                         </div>
 
                         <div class="ask-contact-list">
                             <div class="icon-box">
-                                <a href="#"><img src="images/icon-mail.svg" alt=""></a>
+                                <a href="#"><img src="{% static "images/icon-mail.svg" %} alt=""></a>
                             </div>
                             <a href="#"><span>Email:</span> info@domainname.com</a>
                         </div>
@@ -513,7 +521,7 @@
 								<!-- Footer About Start -->
 								<div class="footer-about">
 									<figure>
-										<img src="images/footer-logo.svg" alt="">
+										<img src="{% static "images/footer-logo.svg" %} alt="">
 									</figure>
 									<p>Creative Agency Based on Lorem Ipsum</p>
                                     <ul>
@@ -577,7 +585,7 @@
                             <div class="col-lg-6">
                                 <!-- Footer Copyright Content Start -->
 								<div class="footer-copyright-text">
-									<p>Copyright © 2024 weebix. All rights reserved.</p>
+									<p>Copyright © 2024 Beandbik. All rights reserved.</p>
 								</div>
 								<!-- Footer Copyright Content End -->
                             </div>
@@ -601,36 +609,37 @@
     </footer>
     <!-- Footer End -->
 
-    <!-- Jquery Library File -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap js file -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
-    <!-- SlickNav js file -->
-    <script src="js/jquery.slicknav.js"></script>
-    <!-- Swiper js file -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Counter js file -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <!-- Isotop js file -->
-	<script src="js/isotope.min.js"></script>
-    <!-- Magnific js file -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- SmoothScroll -->
-    <script src="js/SmoothScroll.js"></script>
-    <!-- MagicCursor js file -->
-    <script src="js/gsap.min.js"></script>
-    <script src="js/magiccursor.js"></script>
-    <!-- Text Effect js file -->
-	<script src="js/SplitText.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
-    <!-- Wow js file -->
-    <script src="js/wow.js"></script>
-    <!-- Main Custom js file -->
-    <script src="js/function.js"></script>
-</body>
-
-<!-- Mirrored from demo.awaikenthemes.com/html-preview/weebix/service-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Aug 2024 05:22:42 GMT -->
-</html>
+     <!-- Jquery Library File -->
+     <script src="{% static "js/jquery-3.7.1.min.js" %}"></script>
+     <!-- Bootstrap js file -->
+     <script src="{% static "js/bootstrap.min.js" %}"></script>
+     <!-- Validator js file -->
+     <script src="{% static "js/validator.min.js" %}"></script>
+     <!-- SlickNav js file -->
+     <script src="{% static "js/jquery.slicknav.js" %}"></script>
+     <!-- Swiper js file -->
+     <script src="{% static "js/swiper-bundle.min.js" %}"></script>
+     <!-- Counter js file -->
+     <script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+     <script src="{% static "js/jquery.counterup.min.js" %}"></script>
+     <!-- Isotop js file -->
+     <script src="{% static "js/isotope.min.js" %}"></script>
+     <!-- Magnific js file -->
+     <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+     <!-- SmoothScroll -->
+     <script src="{% static "js/SmoothScroll.js" %}"></script>
+     <!-- MagicCursor js file -->
+     <script src="{% static "js/gsap.min.js" %}"></script>
+     <script src="{% static "js/magiccursor.js" %}"></script>
+     <!-- Text Effect js file -->
+     <script src="{% static "js/SplitText.js" %}"></script>
+     <script src="{% static "js/ScrollTrigger.min.js" %}"></script>
+     <!-- Wow js file -->
+     <script src="{% static "js/wow.js" %}"></script>
+     <!-- Main Custom js file -->
+     <script src="{% static "js/function.js" %}"></script>
+ </body>
+ 
+ <!-- Mirrored from demo.awaikenthemes.com/html-preview/weebix/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Aug 2024 05:22:37 GMT -->
+ 
+ </html>

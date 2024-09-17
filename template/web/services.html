@@ -59,7 +59,7 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="{% static "images/branbik logo 2.png" %}" %}" alt=""></div>
+            <div id="loading-icon"><img src="{% static "images/branbik logo 2.png" %}"  alt=""></div>
         </div>
     </div>
     <!-- Preloader End -->
@@ -79,7 +79,7 @@
                 <div class="container">
                     <!-- Logo Start -->
                     <a class="navbar-brand" href="index.html">
-                        <img src="{% static "images/branbik logo re.png" %}" %}" alt="Logo">
+                        <img src="{% static "images/branbik logo re.png" %}"  alt="Logo">
                     </a>
                     <!-- Logo End -->
 
@@ -158,7 +158,7 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h2>{{ service.name }}</h2>
-                                <a href="#"><img src="{% static 'images/arrow.svg' %}" alt=""></a>
+                                <a href="{{service.get_absolute_url}}"><img src="{% static 'images/arrow.svg' %}" alt=""></a>
                             </div>
                             <p>{{ service.description }}</p>                            
                         </div>
@@ -321,9 +321,9 @@
                                 <!-- Explore Item Content Start -->
                                 <div class="explore-item-tags wow fadeInUp" data-wow-delay="0.25s">
                                     <ul>
-                                        <li><a href="#" class="btn-default">dribbble</a></li>
+                                        <li><a href="#" class="btn-default">instagram</a></li>
                                         <li><a href="#" class="btn-default">linkedin</a></li>
-                                        <li><a href="#" class="btn-default">contact Us</a></li>
+                                        <li><a href="{% url "contact" %}" class="btn-default">contact Us</a></li>
                                     </ul>
                                 </div>
                                 <!-- Explore Item Content End -->
@@ -376,7 +376,7 @@
 										<li><a href="#">Home</a></li>
 										<li><a href="#">About Us</a></li>
 										
-										<li><a href="#contact-us.html">Contact Us</a></li>
+										<li><a href="{% url "contact" %}">Contact Us</a></li>
 									</ul>
 								</div>
 								<!-- Footer Links End -->
